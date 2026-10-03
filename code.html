@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"secondary-container":"#de2e2c","inverse-on-surface":"#ffedeb","on-tertiary-fixed":"#251a00","secondary-fixed":"#ffdad6","surface-bright":"#fff8f7","on-surface-variant":"#58413f","on-primary-fixed-variant":"#891c1d","primary-fixed-dim":"#ffb3ad","surface-container-low":"#fff0ef","on-tertiary-container":"#dcb24a","on-secondary-container":"#fffbff","on-primary-fixed":"#410003","surface-dim":"#ebd5d3","on-error-container":"#93000a","background":"#fff8f7","on-background":"#251917","on-tertiary":"#ffffff","on-error":"#ffffff","secondary":"#b90c17","primary-container":"#8b1e1e","surface-variant":"#f4dddb","outline-variant":"#dfbfbc","inverse-primary":"#ffb3ad","on-tertiary-fixed-variant":"#5a4300","tertiary-container":"#5c4500","error-container":"#ffdad6","surface-container":"#ffe9e7","tertiary-fixed":"#ffdf99","surface-tint":"#aa3531","inverse-surface":"#3b2d2c","outline":"#8b716e","surface-container-highest":"#f4dddb","primary-fixed":"#ffdad6","surface":"#fff8f7","on-primary":"#ffffff","on-secondary":"#ffffff","tertiary":"#402f00","on-primary-container":"#ff9d95","error":"#ba1a1a","on-surface":"#251917","tertiary-fixed-dim":"#ecc158","surface-container-high":"#fae3e1","on-secondary-fixed-variant":"#93000d","surface-container-lowest":"#ffffff","on-secondary-fixed":"#410002","primary":"#6a020a","secondary-fixed-dim":"#ffb4ab"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1rem","space-lg":"1.5rem","space-xl":"2.5rem","space-md":"1rem","space-sm":"0.5rem","margin":"1rem","space-xs":"0.25rem"},"fontFamily":{"label-sm":["Inter"],"body-lg":["Inter"],"headline-xl":["Montserrat"],"label-md":["Inter"],"headline-sm":["Montserrat"],"body-md":["Inter"],"headline-md":["Montserrat"],"body-sm":["Inter"],"headline-lg":["Montserrat"]},"fontSize":{"label-sm":["12px",{"lineHeight":"16px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"42px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-md":["14px",{"lineHeight":"20px","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"34px","fontWeight":"800"}]}}}</script></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-7xl mx-auto px-gutter lg:px-space-xl flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Logo El Mariscal" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATfcprRyKHBaAsSGjeKDBDQO3XhNw3p7y_Qs8nqAQpnIEshpiXO2LuaPpzD87yDk4RmCTL4arwdug_Cx7IV4iB_ZliFOuYgCIrumlrWdiihsxJs3Lh3sWr9f5BB-CRP7UmY1HHT2xSGaARuPqpumtiFBiV6iiiqWGOVgJgkjpfEfVjW2gJG-Lsqo9l5BX4yvOzg5Zyfw7xJYSIzSoFxj1g0UbLOwYDRT8xpaMBuMjx8PP4LR5U67LJ"/><span class="font-headline-md text-on-surface tracking-tight">El Mariscal</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors px-space-sm py-space-xs rounded-md" data-path="carta" href="#">Carta</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors px-space-sm py-space-xs rounded-md" data-path="arroces" href="#">Arroces</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors px-space-sm py-space-xs rounded-md" data-path="encargos" href="#">Encargos</a><a class="text-body-md text-on-surface-variant hover:text-on-surface transition-colors px-space-sm py-space-xs rounded-md" data-path="donde-estamos" href="#">Dónde estamos</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-md px-space-md py-space-sm rounded-lg hover:bg-secondary transition-all shadow-sm" href="#">Pedir por WhatsApp</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- 1. BARRA SUPERIOR FIJA is in app shell -->
+<!-- 2. HERO -->
+<section class="relative bg-primary text-on-primary overflow-hidden pt-12 pb-24 lg:py-32">
+<div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center" data-alt="A glowing traditional rotisserie oven filled with golden roasting chickens dripping juices, warm amber lighting, artisan takeaway kitchen in Elche, rustic tiles background" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARatlQ-2jBL5q3moNgodbA2A8RBjugwceKIt8ZSwZBUV7DlDVXiTfAWLOPiv5XBa5rG4LJSY9BbsPa1Mr4BLAuTo9JcJ6ecJocOGnc3FswV7om29DDGuHMUKrGeKBsBJ6Xm2u9EScQIPT6sFI0a71NyBpKv_jNHrkU5FF9hlwJG4oZR3TwcwEfrJtO95V0qjg_hxg6Ou4n-ZQtgF-pdrkCdhOD2a3Betu9DNM10gYzxju8gdh6aIzs')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-primary/40 z-10"></div>
+<div class="max-w-7xl mx-auto px-gutter lg:px-space-xl relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<div class="inline-flex items-center gap-2 bg-secondary text-on-secondary px-space-md py-space-xs rounded-full shadow-sm">
+<span class="text-[16px]">✨</span>
+<span class="text-label-md">Nueva administración</span>
+</div>
+<h1 class="font-headline-xl text-on-primary tracking-tight">Pollos asados y arroces caseros en Elche</h1>
+<p class="font-body-lg text-inverse-on-surface max-w-xl">Comida de verdad, hecha cada día. Encarga, recoge y disfruta en casa.</p>
+<div class="inline-flex items-center gap-2 bg-surface text-on-surface px-space-md py-space-xs rounded-full shadow-sm font-label-md">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+<span>Abierto hoy · 09:00 - 16:00</span>
+</div>
+<div class="flex flex-wrap gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-sm bg-secondary text-on-secondary px-space-lg py-space-md rounded-lg font-label-md shadow-lg hover:bg-secondary-container transition-all" href="https://wa.me/34656881742">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+<span>Pedir por WhatsApp</span>
+</a>
+<a class="inline-flex items-center gap-space-sm bg-surface text-on-surface px-space-lg py-space-md rounded-lg font-label-md shadow-lg hover:bg-surface-container transition-all" href="tel:965032002">
+<span class="material-symbols-outlined text-[20px] text-primary">call</span>
+<span>Llamar 965 032 002</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md pt-space-lg w-full border-t border-outline/20">
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-fixed-dim">check_circle</span><span class="text-label-sm">Pollos al ast cada día</span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-fixed-dim">check_circle</span><span class="text-label-sm">Arroces por encargo</span></div>
+<div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-fixed-dim">check_circle</span><span class="text-label-sm">Recogida en el local</span></div>
+</div>
+</div>
+<div class="lg:col-span-5 flex justify-center relative">
+<div class="w-72 h-72 sm:w-96 sm:v-96 rounded-full bg-surface/10 backdrop-blur-md absolute -z-10 animate-pulse"></div>
+<img alt="Logo El Mariscal" class="w-72 h-72 sm:w-88 sm:h-88 object-contain drop-shadow-2xl animate-bounce duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATfcprRyKHBaAsSGjeKDBDQO3XhNw3p7y_Qs8nqAQpnIEshpiXO2LuaPpzD87yDk4RmCTL4arwdug_Cx7IV4iB_ZliFOuYgCIrumlrWdiihsxJs3Lh3sWr9f5BB-CRP7UmY1HHT2xSGaARuPqpumtiFBiV6iiiqWGOVgJgkjpfEfVjW2gJG-Lsqo9l5BX4yvOzg5Zyfw7xJYSIzSoFxj1g0UbLOwYDRT8xpaMBuMjx8PP4LR5U67LJ"/>
+</div>
+</div>
+</section>
+<!-- 3. FRANJA DE CONFIANZA -->
+<section class="bg-surface-container-low py-space-lg">
+<div class="max-w-7xl mx-auto px-gutter lg:px-space-xl flex flex-col md:flex-row justify-around items-center gap-space-md text-center">
+<div class="flex items-center gap-space-sm">
+<span class="text-amber-500 text-2xl">⭐</span>
+<div class="text-left">
+<p class="font-headline-sm text-on-surface">4.9 en Google</p>
+<p class="text-body-sm text-on-surface-variant">Basado en opiniones locales</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-3xl">thumb_up</span>
+<div class="text-left">
+<p class="font-headline-sm text-on-surface">+400 vecinos</p>
+<p class="text-body-sm text-on-surface-variant">Nos siguen en redes sociales</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+<div class="text-left">
+<p class="font-headline-sm text-on-surface">Tradición en Elche</p>
+<p class="text-body-sm text-on-surface-variant">Tu comida para llevar de barrio</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. LO MÁS PEDIDO (#carta) -->
+<section class="py-space-xl max-w-7xl mx-auto px-gutter lg:px-space-xl w-full" id="carta">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="text-label-md text-secondary uppercase tracking-wider">Nuestra Selección</span>
+<h2 class="font-headline-lg text-on-surface mt-space-xs">Lo más pedido</h2>
+<p class="text-body-md text-on-surface-variant mt-space-xs">Los favoritos de nuestros clientes, preparados al momento con ingredientes frescos.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg">
+<!-- Card 1 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div>
+<div class="relative h-48 bg-cover bg-center" data-alt="Golden whole roast chicken with crispy skin seasoned with herbs and lemon, resting on warm tray, appetizing food photography, natural lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC97O0f4NFhJ7H1bSLfz8otjMEJY3GCPNPT5d5KPnN5QYaT6ysO3ZKfggmjsAwz_x1jooAtM48CFHxAF3dpXXKizsYJxqnl7LPefrgmaHwSY9wuJaH4KothF4doujrDN0nwmA56o6N7f-wKf3yAeV8JVJ_I36QlQp44875RS5cbSzb37gmeYnNfuexNgiuAkx1N-NvMm-x6n_osrzXa1W3WYZzUUFk5e8q4rHJcq6Z7nXwvYL40uJOq')">
+<span class="absolute top-space-sm left-space-sm bg-secondary text-on-secondary text-label-sm px-space-sm py-space-xs rounded-md shadow">⭐ El favorito</span>
+</div>
+<div class="p-space-lg">
+<h3 class="font-headline-md text-on-surface">Pollo Asado al Ast</h3>
+<p class="text-body-md text-on-surface-variant mt-space-xs">Nuestro pollo tradicional macerado con especias secretas y asado lentamente.</p>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between">
+<span class="font-headline-md text-primary">8,50 €</span>
+<a class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-label-md hover:bg-secondary transition-colors" href="https://wa.me/34656881742?text=Hola,%20quiero%20pedir%20un%20Pollo%20Asado">Pedir</a>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div>
+<div class="relative h-48 bg-cover bg-center" data-alt="Half roast chicken with golden crispy skin served with homemade french fries and roast juices, wooden table setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAD1wwLVfPyfEobAagQpt-EVjH_WsF8woiWqSvV8nlMXcaeeGFN7LISr6clAVQ4i9R-gbxkh4u5Z2Fs1RWhEqS7mr03I6vbyWFk9GnetERHtyVLHvn-13DYTb0ShOhvzdW_jAxcO-myC9in-Dd4zxY8DXT_DsvvnscX8XfX1G5C7G5UGLbt4OyJex718_SeJyv1-xkOruzX8_j2xUtSKho5cNGVHcTdU4T2eX2J_LHPKOCaT0XVX2pp')">
+<span class="absolute top-space-sm left-space-sm bg-secondary text-on-secondary text-label-sm px-space-sm py-space-xs rounded-md shadow">🔥 Vuela rápido</span>
+</div>
+<div class="p-space-lg">
+<h3 class="font-headline-md text-on-surface">Medio Pollo con Patatas</h3>
+<p class="text-body-md text-on-surface-variant mt-space-xs">La ración perfecta acompañada de patatas fritas caseras naturales.</p>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between">
+<span class="font-headline-md text-primary">5,00 €</span>
+<a class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-label-md hover:bg-secondary transition-colors" href="https://wa.me/34656881742?text=Hola,%20quiero%20pedir%20Medio%20Pollo">Pedir</a>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div>
+<div class="relative h-48 bg-cover bg-center" data-alt="Authentic Spanish paella valenciana with chicken, rabbit, green beans and saffron rice in a large paella pan, sunny day lighting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAqF7wKvCNibXda55oY8wSxFZkmsaQVK9o-TpS_Jz_Ff5yVWJuCz46uMss0r4f8pI4p0DJA3FexsnTTdV9ikum5Y_Xuhqgnkuz4pFKCkfyC2NaMjWfgDv9uyvqMl40tfKeHj7pgp7REIrmEx2ULiT1MJavXsJ-sQutqy_GFne3JxGYFLilUrXcncpWYIr6C-QL9asGnkdDmyqPeFRufyy26e9ZP7dOSb2pTysAwbdx0HcFi6grx4Dxg')">
+<span class="absolute top-space-sm left-space-sm bg-secondary text-on-secondary text-label-sm px-space-sm py-space-xs rounded-md shadow">⭐ El favorito</span>
+</div>
+<div class="p-space-lg">
+<h3 class="font-headline-md text-on-surface">Paella Valenciana</h3>
+<p class="text-body-md text-on-surface-variant mt-space-xs">Pollo, conejo, judía plana, garrofó y arroz bomba con caldo casero.</p>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between">
+<span class="font-headline-md text-primary">6,50 € / ración</span>
+<a class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-label-md hover:bg-secondary transition-colors" href="https://wa.me/34656881742?text=Hola,%20quiero%20pedir%20Paella%20Valenciana">Pedir</a>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div>
+<div class="relative h-48 bg-cover bg-center" data-alt="Traditional Spanish Arroz con Costra from Elche with baked egg and sausage crust over golden rice, traditional ceramic dish" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCj1fnxUG7gL9kHZnCcxM8vs6gX2ssxL9HEGYM1gd0WthsSya5QOmtxKSB-rgYMBnF9AQWuZTjkp15ARJhUxJlxn09xjAsa755VE4fBaHdAe6F0zRzEAliTyReGfd3p9JYPH5Cr8kJ121m76vIfFS6CUjcVPLuwZ3Qxtl4s1UPlZv6MCa6dNCO7DRTXOYIRcpbhvyvaRQirShuB8WlHVlue_v3P3jY8La8cQLk8nA-qkA3yMDtwKZM-')">
+<span class="absolute top-space-sm left-space-sm bg-secondary text-on-secondary text-label-sm px-space-sm py-space-xs rounded-md shadow">🔥 Vuela rápido</span>
+</div>
+<div class="p-space-lg">
+<h3 class="font-headline-md text-on-surface">Arroz con Costra</h3>
+<p class="text-body-md text-on-surface-variant mt-space-xs">El plato típico ilicitano con embutido local y capa dorada de huevo al horno.</p>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between">
+<span class="font-headline-md text-primary">7,00 € / ración</span>
+<a class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-label-md hover:bg-secondary transition-colors" href="https://wa.me/34656881742?text=Hola,%20quiero%20pedir%20Arroz%20con%20Costra">Pedir</a>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div>
+<div class="relative h-48 bg-cover bg-center" data-alt="Vegetarian paella with fresh garden vegetables, artichokes, peppers and beans in a rich vegetable broth" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBjUY7snogkRYvGN_gzZq5SigI9zfir8JM7jGl7goCIMrjfaYScgutE4FQlMjqo6Jodtmwv2QhG5d25goN1hOgbDBh6cJcMWPLpsugdXQBKN1uxx3YxvtttphDPoVUCaLE9KMrmHe9xUHc0L35MtoRQtp4juiflQZNa7CX7AC2C9Um5U1HYVsKwxCNzzgL-EIRiq15pS_KxVrPWNDIu7v7FwcXn3oNPvJTfgd0XtCvv2M1aDGs37E6')"></div>
+<div class="p-space-lg">
+<h3 class="font-headline-md text-on-surface">Arroz con Verduras</h3>
+<p class="text-body-md text-on-surface-variant mt-space-xs">Verduras frescas de temporada de la huerta, sabroso y 100% vegetal.</p>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between">
+<span class="font-headline-md text-primary">6,00 € / ración</span>
+<a class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-label-md hover:bg-secondary transition-colors" href="https://wa.me/34656881742?text=Hola,%20quiero%20pedir%20Arroz%20con%20Verduras">Pedir</a>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="bg-surface rounded-xl overflow-hidden shadow-md flex flex-col justify-between hover:shadow-xl transition-shadow">
+<div>
+<div class="relative h-48 bg-cover bg-center" data-alt="Fresh Mediterranean salad with lettuce, tomatoes, tuna, olives, onions and sweet corn, colorful and crisp" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCEv30fZ2Vk5F2M7uko3-l4BJXmwFYvzxMNXcGw3M4WyqgXDWzoHCm0CiAmg2IQuioCzv78vmfBJNhDXEkmvBkMeTG8-NaFTOFdb_Ia-wX19nK7IRbramjPDe-ZNadNtd_3fxP9bGDn2bY-ESgwrDxvxhzeMxpS9l8vF_wFU5O6mA9qcn9ePfMfsXIZ3ymicssCBqwjGCSJGy6knR0jgzc6KCIAwYHuCwUmp_NVMITJQE4uez1ktJyF')"></div>
+<div class="p-space-lg">
+<h3 class="font-headline-md text-on-surface">Ensalada de la Casa</h3>
+<p class="text-body-md text-on-surface-variant mt-space-xs">Lechuga fresca, tomate, atún, aceitunas y maíz con aliño tradicional.</p>
+</div>
+</div>
+<div class="p-space-lg pt-0 flex items-center justify-between">
+<span class="font-headline-md text-primary">4,50 €</span>
+<a class="bg-primary text-on-primary px-space-md py-space-sm rounded-lg text-label-md hover:bg-secondary transition-colors" href="https://wa.me/34656881742?text=Hola,%20quiero%20pedir%20Ensalada">Pedir</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. NUESTROS ARROCES (#arroces) -->
+<section class="bg-primary text-on-primary py-space-xl" id="arroces">
+<div class="max-w-7xl mx-auto px-gutter lg:px-space-xl">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="text-label-md text-tertiary-fixed-dim uppercase tracking-wider">Tradición Ilicitana</span>
+<h2 class="font-headline-lg text-on-primary mt-space-xs">Arroces hechos al momento, como en casa</h2>
+<p class="text-body-md text-inverse-on-surface mt-space-xs">El auténtico sabor del arroz mediterráneo cocinado a fuego lento cada mañana.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface text-on-surface p-space-lg rounded-xl shadow-lg flex flex-col justify-between">
+<div>
+<div class="h-40 rounded-lg bg-cover bg-center mb-space-md" data-alt="Paella valenciana tradicional con su socarrat dorado" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBp9ZFOtg9_zpqITDoVKv7k-il0_-N1T8ozxnhifyj9ok8Ou9WUsBbdHCUoJfTxiknO-BLigU4lNqsdQ81ZIIagnp89PkWLzSkqsXpI1WCmeiuyp2KMn2b51nag6kX6divKnXXfdT9z6A1-nDDyh9o81Q94kcIl9NRqvKliMXxkRJFWNgSpDqve8homV1-3W_z1EdNCCoWauWl4f22jaXMq_8_rN_3G3GsBf9Mxwlp72E1q9hm4-jSO')"></div>
+<h3 class="font-headline-md text-on-surface">Paella Valenciana</h3>
+<p class="text-body-md text-on-surface-variant mt-space-xs">La receta clásica con pollo, conejo y legumbres frescas.</p>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="font-headline-sm text-primary">6,50 € / ración</span>
+<span class="text-label-sm text-outline">Por encargo</span>
+</div>
+</div>
+<div class="bg-surface text-on-surface p-space-lg rounded-xl shadow-lg flex flex-col justify-between ring-2 ring-tertiary-fixed-dim">
+<div>
+<div class="h-40 rounded-lg bg-cover bg-center mb-space-md" data-alt="Arroz con costra típico de Elche recién horneado con huevo batido" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBP03S_DEQ6iHSqpHmGplqUgilw6LdzPZRlJXztpInX6hfja3Iufn4Efhv5uIorPIIJg9rZ4H-Z8_KeCQl8VWIyr46B2YlXe1CRQuKiOJV-ZVSAZ7LNh2gV7lZ3Aax2vpmLppuCnw35AhOP4b8fiAIfwTTkFQPPy3CEktGlU0Raa7Owvr3r3PqrXnujmhqSoz1wpDgjB3SIvGPXhJZ-H5wXDbdLXTpOY428_dIVkb6bT2Hw_QCvaWah')"></div>
+<h3 class="font-headline-md text-on-surface">Arroz con Costra</h3>
+<p class="text-body-md text-on-surface-variant mt-space-xs">Nuestra especialidad de Elche con embutido y huevo al horno.</p>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="font-headline-sm text-primary">7,00 € / ración</span>
+<span class="text-label-sm text-secondary font-semibold">¡El más pedido!</span>
+</div>
+</div>
+<div class="bg-surface text-on-surface p-space-lg rounded-xl shadow-lg flex flex-col justify-between">
+<div>
+<div class="h-40 rounded-lg bg-cover bg-center mb-space-md" data-alt="Arroz con verduras de la huerta alicantina" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAMJ4tzT6bjL9xVfwcaQ2I73rDQ67Erpq9_jKgJNWRbsQYrihvY86FThElfEx9HAosBE1GafY7J2Sh8PxM7QYZ1qn0zMy4RFySVq9QnJJMCQxvTIOrfJi4KZ2iLjJtV9BX3CSVfRkq_yDVYXDyQ3IA27NgSvS9j57YFs7Zr9sbaOnTQWE4WrBld1azOxP7YI6Olj1N3JchOg0_wkW3Y1RA--lBbqeCV0NJpxUApHd_PhAiJsJd8Q8o0')"></div>
+<h3 class="font-headline-md text-on-surface">Arroz con Verduras</h3>
+<p class="text-body-md text-on-surface-variant mt-space-xs">Sabor natural con hortalizas frescas de la tierra.</p>
+</div>
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex items-center justify-between">
+<span class="font-headline-sm text-primary">6,00 € / ración</span>
+<span class="text-label-sm text-outline">Por encargo</span>
+</div>
+</div>
+</div>
+<div class="text-center mt-space-xl">
+<p class="font-body-lg text-inverse-on-surface bg-surface/10 py-space-sm px-space-md rounded-lg inline-block backdrop-blur-sm">
+          💡 Nota: Encárgalo con antelación y lo tienes listo a tu hora.
+        </p>
+</div>
+</div>
+</section>
+<!-- 6. CARTA COMPLETA -->
+<section class="py-space-xl max-w-5xl mx-auto px-gutter lg:px-space-xl w-full">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="text-label-md text-secondary uppercase tracking-wider">Menú Completo</span>
+<h2 class="font-headline-lg text-on-surface mt-space-xs">Nuestra Carta</h2>
+</div>
+<!-- Tabs Container -->
+<div class="w-full" x-data="{ tab: 'asados' }">
+<div class="flex flex-wrap justify-center gap-space-sm mb-space-xl">
+<button :class="tab === 'asados' ? 'bg-primary text-on-primary shadow-md' : 'bg-surface-container text-on-surface-variant hover:bg-surface-container-high'" @click="tab = 'asados'" class="px-space-lg py-space-sm rounded-lg font-label-md transition-all">Asados</button>
+<button :class="tab === 'arroces' ? 'bg-primary text-on-primary shadow-md' : 'bg-surface-container text-on-surface-variant hover:bg-surface-container-high'" @click="tab = 'arroces'" class="px-space-lg py-space-sm rounded-lg font-label-md transition-all">Arroces</button>
+<button :class="tab === 'ensaladas' ? 'bg-primary text-on-primary shadow-md' : 'bg-surface-container text-on-surface-variant hover:bg-surface-container-high'" @click="tab = 'ensaladas'" class="px-space-lg py-space-sm rounded-lg font-label-md transition-all">Ensaladas</button>
+<button :class="tab === 'postres' ? 'bg-primary text-on-primary shadow-md' : 'bg-surface-container text-on-surface-variant hover:bg-surface-container-high'" @click="tab = 'postres'" class="px-space-lg py-space-sm rounded-lg font-label-md transition-all">Postres y Bebidas</button>
+</div>
+<!-- Tab Asados -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm space-y-space-md" x-show="tab === 'asados'">
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Pollo Asado al Ast</h4><p class="text-body-sm text-on-surface-variant">Con nuestro adobo casero y piel crujiente.</p></div>
+<span class="font-headline-sm text-primary">8,50 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Medio Pollo</h4><p class="text-body-sm text-on-surface-variant">Ideal para una persona, incluye patatas.</p></div>
+<span class="font-headline-sm text-primary">5,00 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Costillar Asado</h4><p class="text-body-sm text-on-surface-variant">Jugoso costillar con salsa barbacoa casera.</p></div>
+<span class="font-headline-sm text-primary">9,50 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm">
+<div><h4 class="font-headline-sm text-on-surface">Ración de Patatas Fritas</h4><p class="text-body-sm text-on-surface-variant">Patatas naturales recién cortadas y fritas.</p></div>
+<span class="font-headline-sm text-primary">3,00 €</span>
+</div>
+</div>
+<!-- Tab Arroces -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm space-y-space-md" style="display: none;" x-show="tab === 'arroces'">
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Arroz con Costra (Por ración)</h4><p class="text-body-sm text-on-surface-variant">El rey de Elche. Mínimo 2 raciones.</p></div>
+<span class="font-headline-sm text-primary">7,00 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Paella Valenciana (Por ración)</h4><p class="text-body-sm text-on-surface-variant">Pollo, conejo y verduras frescas.</p></div>
+<span class="font-headline-sm text-primary">6,50 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Arroz con Verduras (Por ración)</h4><p class="text-body-sm text-on-surface-variant">100% vegetariano, lleno de sabor.</p></div>
+<span class="font-headline-sm text-primary">6,00 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm">
+<div><h4 class="font-headline-sm text-on-surface">Arroz a Banda (Por ración)</h4><p class="text-body-sm text-on-surface-variant">Caldo de pescado de roca y anillas de calamar.</p></div>
+<span class="font-headline-sm text-primary">7,50 €</span>
+</div>
+</div>
+<!-- Tab Ensaladas -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm space-y-space-md" style="display: none;" x-show="tab === 'ensaladas'">
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Ensalada Mixta</h4><p class="text-body-sm text-on-surface-variant">Lechuga, tomate, atún, cebolla y aceitunas.</p></div>
+<span class="font-headline-sm text-primary">4,50 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Ensalada de la Casa</h4><p class="text-body-sm text-on-surface-variant">Con frutos secos, queso de cabra y vinagreta.</p></div>
+<span class="font-headline-sm text-primary">5,50 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm">
+<div><h4 class="font-headline-sm text-on-surface">Tomate Aliñado</h4><p class="text-body-sm text-on-surface-variant">Tomate de huerta con AOVE y atún.</p></div>
+<span class="font-headline-sm text-primary">4,00 €</span>
+</div>
+</div>
+<!-- Tab Postres -->
+<div class="bg-surface rounded-2xl p-space-lg shadow-sm space-y-space-md" style="display: none;" x-show="tab === 'postres'">
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Flan Casero de Huevo</h4><p class="text-body-sm text-on-surface-variant">Receta tradicional con caramelo.</p></div>
+<span class="font-headline-sm text-primary">2,50 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm border-b border-surface-container">
+<div><h4 class="font-headline-sm text-on-surface">Tarta de Queso</h4><p class="text-body-sm text-on-surface-variant">Cremosa con base de galleta.</p></div>
+<span class="font-headline-sm text-primary">3,00 €</span>
+</div>
+<div class="flex justify-between items-center py-space-sm">
+<div><h4 class="font-headline-sm text-on-surface">Bebidas (Refrescos / Cerveza / Agua)</h4><p class="text-body-sm text-on-surface-variant">Variedad fría disponible en el local.</p></div>
+<span class="font-headline-sm text-primary">1,50 €</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. ENCARGOS PARA CELEBRACIONES (#encargos) -->
+<section class="bg-surface-container-low py-space-xl" id="encargos">
+<div class="max-w-7xl mx-auto px-gutter lg:px-space-xl grid grid-cols-1 lg:grid-cols-2 gap-space-xl items-center">
+<div class="rounded-2xl overflow-hidden shadow-lg h-80 bg-cover bg-center" data-alt="A massive traditional Spanish paella pan cooking over live flame outdoors for a family gathering, festive atmosphere" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC3Im-6whXsOxAsxkBOudOxcz0kapDUPIG3iVcqkkpACbG-XUMQrVG9-fLZjA_s3lyVJa0ogYONAsm994jJ-LI1LVwboib9eRe2seqniJrNbCEdU4AsH-zEHchBGS0kzUuts5y_OIzWz7oiVyJwJsb8pLQD256FEzCAR6ILazaaaq8N4zQg2a8dpqSgXG6aFh7VvJzAtCj-UhtqYLrLrk6o3j7Yv4rPY1YdLjjAr26Fm6EDl_iAJNBE')"></div>
+<div class="flex flex-col items-start gap-space-md">
+<div class="bg-secondary/10 text-secondary px-space-md py-space-xs rounded-full font-label-md">Celebraciones y Encargos</div>
+<h2 class="font-headline-lg text-on-surface">¿Comunión o celebración? Nosotros nos encargamos de la cocina</h2>
+<p class="text-body-lg text-on-surface-variant">Disfruta de estas fechas con tu familia y amigos. Encarga tus paellas, arroz con costra y mucho más para tus eventos especiales.</p>
+<div class="flex items-center gap-2 text-primary font-label-md">
+<span class="material-symbols-outlined">schedule</span>
+<span>Recomendamos encargar con 48 h de antelación</span>
+</div>
+<div class="flex flex-wrap gap-space-md pt-space-sm">
+<a class="bg-secondary text-on-secondary px-space-lg py-space-md rounded-lg font-label-md shadow hover:bg-secondary-container transition-all inline-flex items-center gap-space-sm" href="https://wa.me/34647255337?text=Hola,%20quiero%20pedir%20un%20presupuesto%20para%20celebración">
+<span class="material-symbols-outlined">chat</span>
+<span>Pedir presupuesto por WhatsApp</span>
+</a>
+<a class="bg-surface text-on-surface px-space-lg py-space-md rounded-lg font-label-md shadow hover:bg-surface-container transition-all inline-flex items-center gap-space-sm" href="tel:647255337">
+<span class="material-symbols-outlined text-primary">call</span>
+<span>647 25 53 37</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. CÓMO PEDIR -->
+<section class="py-space-xl max-w-7xl mx-auto px-gutter lg:px-space-xl w-full">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="text-label-md text-secondary uppercase tracking-wider">Fácil y Rápido</span>
+<h2 class="font-headline-lg text-on-surface mt-space-xs">¿Cómo hacer tu pedido?</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<div class="bg-surface p-space-lg rounded-2xl shadow-sm text-center relative flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-md mb-space-md">1</div>
+<h3 class="font-headline-md text-on-surface mb-space-xs">Escríbenos o Llámanos</h3>
+<p class="text-body-md text-on-surface-variant">Haz tu pedido cómodamente por WhatsApp o llámanos directamente por teléfono.</p>
+</div>
+<div class="bg-surface p-space-lg rounded-2xl shadow-sm text-center relative flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-md mb-space-md">2</div>
+<h3 class="font-headline-md text-on-surface mb-space-xs">Elige la Hora</h3>
+<p class="text-body-md text-on-surface-variant">Dinos qué platos quieres y a qué hora exacta te va bien pasar a recogerlos.</p>
+</div>
+<div class="bg-surface p-space-lg rounded-2xl shadow-sm text-center relative flex flex-col items-center">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-headline-md mb-space-md">3</div>
+<h3 class="font-headline-md text-on-surface mb-space-xs">Recoge Calentito</h3>
+<p class="text-body-md text-on-surface-variant">Pásate por nuestro local en C. Blas Valero y llévatelo listo para disfrutar en casa.</p>
+</div>
+</div>
+</section>
+<!-- 9. NUEVA ETAPA -->
+<section class="bg-surface-container py-space-xl">
+<div class="max-w-7xl mx-auto px-gutter lg:px-space-xl grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-6 flex flex-col items-start gap-space-md">
+<span class="text-label-md text-secondary uppercase tracking-wider">Nueva Administración</span>
+<h2 class="font-headline-lg text-on-surface">Mismas ganas de siempre, nueva ilusión</h2>
+<p class="text-body-lg text-on-surface-variant">El Mariscal abre una nueva etapa bajo nueva gestión pero con el compromiso inquebrantable de ofrecerte comida casera de la máxima calidad. Seleccionamos los mejores ingredientes frescos cada mañana para que disfrutes del auténtico trato de barrio en Elche.</p>
+<div class="flex gap-space-lg pt-space-xs">
+<div>
+<p class="font-headline-lg text-primary">100%</p>
+<p class="text-body-sm text-on-surface-variant">Casero y fresco</p>
+</div>
+<div>
+<p class="font-headline-lg text-primary">Diario</p>
+<p class="text-body-sm text-on-surface-variant">Asados al momento</p>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6 rounded-2xl overflow-hidden shadow-lg h-80 bg-cover bg-center" data-alt="Charming storefront of Pollo Asado El Mariscal in Elche with clean traditional signage and welcoming warm lights" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBJIaXtiTj_ixkgUZioPbdqOf07CNSLCF_OBo10MAn3GjllZcqYFYzNn58CwQnxlPZ1s10I-XXB2szRpEBkz7J1qSubKJS4hFlBnkMjZgnGMW8bt496zN0cM-lJCIqkeLSqABLjseC0r5HKxkbyWQ6JjYLxdne8Q5R3TRJXBeWTqLWhP8OV6aeLhAQVPZTXZ9P5P9ymhjT5IxEhfhdlU46L_psMifB-iV37cUY-V1QNbe3b7OiUyH8P')"></div>
+</div>
+</section>
+<!-- 10. RESEÑAS -->
+<section class="py-space-xl max-w-7xl mx-auto px-gutter lg:px-space-xl w-full">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="text-label-md text-secondary uppercase tracking-wider">Opiniones</span>
+<h2 class="font-headline-lg text-on-surface mt-space-xs">Lo que dicen nuestros vecinos</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<div class="bg-surface p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="text-amber-500 text-lg mb-space-xs">⭐⭐⭐⭐⭐</div>
+<p class="text-body-md text-on-surface italic">"El mejor pollo asado de Elche sin duda. La piel crujiente y muy jugoso. Y el arroz con costra buenísimo."</p>
+</div>
+<p class="font-label-md text-primary mt-space-md">— María J. G.</p>
+</div>
+<div class="bg-surface p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="text-amber-500 text-lg mb-space-xs">⭐⭐⭐⭐⭐</div>
+<p class="text-body-md text-on-surface italic">"Muy atentos y rápidos. Pedimos arroz para un cumpleaños y salió perfecto. Repetiremos seguro."</p>
+</div>
+<p class="font-label-md text-primary mt-space-md">— Carlos M.</p>
+</div>
+<div class="bg-surface p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="text-amber-500 text-lg mb-space-xs">⭐⭐⭐⭐⭐</div>
+<p class="text-body-md text-on-surface italic">"Comida totalmente casera y se nota en el sabor. Las patatas asadas con el caldito del pollo son un vicio."</p>
+</div>
+<p class="font-label-md text-primary mt-space-md">— Ana Belén R.</p>
+</div>
+<div class="bg-surface p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="text-amber-500 text-lg mb-space-xs">⭐⭐⭐⭐⭐</div>
+<p class="text-body-md text-on-surface italic">"Trato excelente de los nuevos dueños. Da gusto tener un sitio así en el barrio para los domingos."</p>
+</div>
+<p class="font-label-md text-primary mt-space-md">— Vicente P.</p>
+</div>
+</div>
+</section>
+<!-- 11. GALERÍA / INSTAGRAM -->
+<section class="bg-surface-container-low py-space-xl">
+<div class="max-w-7xl mx-auto px-gutter lg:px-space-xl">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="text-label-md text-secondary uppercase tracking-wider">Instagram</span>
+<h2 class="font-headline-lg text-on-surface mt-space-xs">Síguenos en @elmariscalcomidasparallevar</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-md mb-space-lg">
+<div class="h-36 rounded-xl bg-cover bg-center shadow-sm" data-alt="Close up of golden roast chicken leg with herbs" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB9zUsBbwup-yaaLOWhma7jtnAutadZH8ECGIWGNHp8NyQLAPdHulJUNrGljLTCDZlh-iGPXdWavM8KoDGH9CgRrRbhgD1p825Y-7agdYMm3kcyV4UdlVGwpadd1RILHR8D_g3jLV14-0KxKl2VGRtiHDB-xiIpNOviC7LY-qLwv0_IUQ0hi3-jPxniWKTj4tYqncN8vzEdUJmpBkj36ts8tqvl0mIh50RQRe1kbzPMtgcGFCpA0tFY')"></div>
+<div class="h-36 rounded-xl bg-cover bg-center shadow-sm" data-alt="Paella valenciana bubbling in large pan" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCn4dSdvlLQA-qWZjGWUadBedd2T16S-VdrBgc9E6jsbgHcm8AyxMyXfwVxxDZPfQxPDf6yAZ3QEodxgEUwD1BmX10lHPlgLfq6muccQx-QKh4Rj3av0bjeudbifwcYoxgx0ryXeCO3jJ28wkMnkmYTwF-RpUQE0rAamlo4xMeVp9wQZKUATNfaR8sJO7cqKygdileNU8_ICdDoT0v_hEzwVkhuz-TgQt0HkRTUJYfBUte7_y2aVCmw')"></div>
+<div class="h-36 rounded-xl bg-cover bg-center shadow-sm" data-alt="Fresh homemade croquettes hot out of the fryer" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkQXF_jD38BH8vzONzdBKPwh6JfvtN_SiyAOE1pcH09N3pYHW6J9qPsVrBb8M0soF8Krn5bIzKiQmO_NmTtzlioe1dkKvG2iWJNqO3Rp5EXV2VGedw0hi4nyaf_Wu3KPUsT1VuEuXZOMjW7VFHgr0FxSafmc8--r220304uui8rXXnWA_h0nGG8bD1YgqmadIO6JsQqJa_KMKPrBZRL0DbtAnTIsYTVZ-8kca95aFZbaw8jzFIfrIp')"></div>
+<div class="h-36 rounded-xl bg-cover bg-center shadow-sm" data-alt="Arroz con costra steaming fresh from oven" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCSPThJz15w2fBtE0hzg2AgpOTVr4V-Ct2RGP0mpAZ71qMhUiUkWp-hfhLxx0d4yD4Pd11eAlWY8JrzEeuDYnK9YKTPHbm0q3vQnibqpggdj5Md9MbZlCRvFybvgLFycORVeTi2_vZTy3WHwg4HramePGl5RwLSfKsjskh_smn27s488mLy7kQK9ufzpb2UiwsuWw-jw34FQ-dSFuM_QEiDVuRx8NE4IpUtV2uRPZvWEynnvWK3kO3b')"></div>
+<div class="h-36 rounded-xl bg-cover bg-center shadow-sm" data-alt="Crispy french fries seasoned with salt" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBPzycacppledZbKi9J0lHM-Zq8jWuxn2J6B9Ea3dwCNwUb0lgZmRmp3qQL42JzXFx757vsPPOQZjj60MiJCYv7vbXE7xTcltTxpxzYT4LV8ImjwkFZl8XPvMXQ9cuHwNtcigQBRZeMJRCiSs7l7ge3n9ri4f5YzD54_vOaAJ4nekf_91sx5WidnLRRn611MgwnM_dryVQakfz1kjEV39yR9bw2KQs9ViVtJefaV5vW8AYh0NKXEKJh')"></div>
+<div class="h-36 rounded-xl bg-cover bg-center shadow-sm" data-alt="Sweet homemade flan dessert with caramel" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAgNZQIu4UDXrflgV8coJ5W0qLfFnKsincMhGlEr_rF26KXCZueGvctdsbMNPynb2M0ucNv7Gqs-HYvl022lzWCw71UeQPsLP0MiRl8-hZg5NYeuFgoHFkpsI04QKDFKrjhbnuZtMAng08IXoVMhj3C-50PGAcVOkfyMMgFm4nP3E3TmR8gsT0NHXF7o-fQc1s5g6Sn8-Yctst0DEk8RPwOeL3-Gb2vfkUfrqT-iForOwQL9hkVO7gv')"></div>
+</div>
+<div class="text-center">
+<a class="inline-flex items-center gap-space-sm bg-primary text-on-primary px-space-lg py-space-md rounded-lg font-label-md shadow hover:bg-secondary transition-all" href="https://instagram.com" target="_blank">
+<span class="material-symbols-outlined">photo_camera</span>
+<span>Ver perfil de Instagram</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 12. DÓNDE ESTAMOS (#donde-estamos) -->
+<section class="py-space-xl max-w-7xl mx-auto px-gutter lg:px-space-xl w-full" id="donde-estamos">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="text-label-md text-secondary uppercase tracking-wider">Ubicación y Horario</span>
+<h2 class="font-headline-lg text-on-surface mt-space-xs">¿Dónde estamos?</h2>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<div class="lg:col-span-5 flex flex-col gap-space-md bg-surface p-space-xl rounded-2xl shadow-sm">
+<div class="flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">location_on</span>
+<div>
+<h4 class="font-headline-sm text-on-surface">Dirección</h4>
+<p class="text-body-md text-on-surface-variant">C. Blas Valero, 41<br/>03201 Elx, Alicante</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">schedule</span>
+<div>
+<h4 class="font-headline-sm text-on-surface">Horario</h4>
+<p class="text-body-md text-on-surface-variant">Lunes a Domingo: 09:00 - 16:00</p>
+</div>
+</div>
+<div class="flex items-start gap-space-md">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">call</span>
+<div>
+<h4 class="font-headline-sm text-on-surface">Teléfonos de contacto</h4>
+<p class="text-body-md text-on-surface-variant">965 032 002 / 647 255 337</p>
+</div>
+</div>
+<div class="flex gap-space-md pt-space-md">
+<a class="flex-1 text-center bg-primary text-on-primary py-space-sm rounded-lg font-label-md hover:bg-secondary transition-all" href="https://maps.google.com/?q=C.+Blas+Valero,+41,+03201+Elx" target="_blank">Cómo llegar</a>
+<a class="flex-1 text-center bg-surface-container text-on-surface py-space-sm rounded-lg font-label-md hover:bg-surface-container-high transition-all" href="tel:965032002">Llamar</a>
+</div>
+</div>
+<div class="lg:col-span-7 h-96 rounded-2xl overflow-hidden shadow-md">
+<div class="w-full h-full bg-cover bg-center" data-location="C. Blas Valero, 41, 03201 Elx, Alicante" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDm4iYP0nyzNxEsmJKbWh_31pAAVWn_QmJ7df_q9ugUZlHyN3zjKWFxN4zLSYIyU0oXIyV7znbTB5zBSnMsU7ib5R02PPDJQ1EtfeGAuI1FvXhPiwrXC6cyahVWhhpPMGYYZPw6YAml3t8snTygGtT5zEXJhwOY0tDDk3wjgoe3Zm72tFghcAcnnmBfkWDSEpJjYWCm-0zCHk52FH5N2n9C9xcRLvL9JHvI-CTeJupcT4jz9dGqxlK')"></div>
+</div>
+</div>
+</section>
+<!-- 13. CTA FINAL -->
+<section class="bg-primary text-on-primary py-20 relative overflow-hidden text-center">
+<div class="absolute inset-0 opacity-10 bg-cover bg-center" data-alt="Warm rustic background pattern with traditional Spanish food illustrations" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqQ9lNfgyvYmqQ74Srbed_ibtt8yt48gal0cCMkBjbU_dKxiP1E73VhdN1NaLsNCaVrkSs4WwBxQSss7sEAW2lmiFMo33dfmf844SuV6MQAnIAw2HZcfNPcRVKhMYefFYwxaU9e2243mUrpV1e467yLMzJXI6FNzU6d5VwIbfA6ssXJuwQVSvVdZg3g6Shc9QJ1fA9zqJc3Y7yxFgnYcH7MDIyjge5-lFTSt0keWiLKDOmMBPxu1rC')"></div>
+<div class="max-w-4xl mx-auto px-gutter relative z-10 flex flex-col items-center gap-space-md">
+<img alt="Logo El Mariscal" class="w-24 h-24 object-contain mb-space-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATfcprRyKHBaAsSGjeKDBDQO3XhNw3p7y_Qs8nqAQpnIEshpiXO2LuaPpzD87yDk4RmCTL4arwdug_Cx7IV4iB_ZliFOuYgCIrumlrWdiihsxJs3Lh3sWr9f5BB-CRP7UmY1HHT2xSGaARuPqpumtiFBiV6iiiqWGOVgJgkjpfEfVjW2gJG-Lsqo9l5BX4yvOzg5Zyfw7xJYSIzSoFxj1g0UbLOwYDRT8xpaMBuMjx8PP4LR5U67LJ"/>
+<h2 class="font-headline-xl text-on-primary">¿Hoy no te apetece cocinar?</h2>
+<p class="text-body-lg text-inverse-on-surface max-w-xl">Encarga tu pollo asado o tu arroz favorito y disfrútalo en casa con los tuyos sin preocuparte de nada.</p>
+<div class="flex flex-wrap justify-center gap-space-md pt-space-md">
+<a class="inline-flex items-center gap-space-sm bg-secondary text-on-secondary px-space-xl py-space-md rounded-lg font-label-md shadow-lg hover:bg-secondary-container transition-all text-base" href="https://wa.me/34656881742">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span>Pedir por WhatsApp</span>
+</a>
+<a class="inline-flex items-center gap-space-sm bg-surface text-on-surface px-space-xl py-space-md rounded-lg font-label-md shadow-lg hover:bg-surface-container transition-all text-base" href="tel:965032002">
+<span class="material-symbols-outlined text-[24px] text-primary">call</span>
+<span>Llamar Ahora</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 14. FOOTER is partly in app shell, supplement details -->
+<footer class="w-full bg-surface-container-low py-space-xl border-t border-outline/10">
+<div class="max-w-7xl mx-auto px-gutter lg:px-space-xl grid grid-cols-1 md:grid-cols-3 gap-space-xl mb-space-xl text-on-surface-variant">
+<div>
+<div class="flex items-center gap-space-md mb-space-md">
+<img alt="Logo El Mariscal" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATfcprRyKHBaAsSGjeKDBDQO3XhNw3p7y_Qs8nqAQpnIEshpiXO2LuaPpzD87yDk4RmCTL4arwdug_Cx7IV4iB_ZliFOuYgCIrumlrWdiihsxJs3Lh3sWr9f5BB-CRP7UmY1HHT2xSGaARuPqpumtiFBiV6iiiqWGOVgJgkjpfEfVjW2gJG-Lsqo9l5BX4yvOzg5Zyfw7xJYSIzSoFxj1g0UbLOwYDRT8xpaMBuMjx8PP4LR5U67LJ"/>
+<span class="font-headline-md text-on-surface">El Mariscal</span>
+</div>
+<p class="text-body-sm">Comidas para llevar en Elche. Tradición, calidad y el mejor sabor casero cada día.</p>
+</div>
+<div>
+<h4 class="font-headline-sm text-on-surface mb-space-sm">Contacto</h4>
+<p class="text-body-sm">C. Blas Valero, 41 – 03201 Elx</p>
+<p class="text-body-sm">Tel: 965 032 002 / 647 255 337</p>
+<p class="text-body-sm">WhatsApp: 656 881 742</p>
+</div>
+<div>
+<h4 class="font-headline-sm text-on-surface mb-space-sm">Horario</h4>
+<p class="text-body-sm">Lunes a Domingo: 09:00 - 16:00</p>
+<div class="flex gap-space-md mt-space-md">
+<a class="text-on-surface-variant hover:text-primary" href="#">Facebook</a>
+<a class="text-on-surface-variant hover:text-primary" href="#">Instagram</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-gutter lg:px-space-xl text-center text-on-surface-variant text-body-sm border-t border-outline/10 pt-space-lg flex flex-col sm:flex-row justify-between items-center gap-space-sm">
+<p>© 2024 El Mariscal. Todos los derechos reservados.</p>
+<div class="flex gap-space-md">
+<a class="hover:underline" href="#">Aviso Legal</a>
+<a class="hover:underline" href="#">Política de Privacidad</a>
+</div>
+</div>
+</footer>
+</div></main><div class="fixed bottom-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,0,0,0.06)] py-3 px-gutter flex items-center justify-around md:justify-center md:gap-space-xl"><a class="flex flex-col md:flex-row items-center gap-1 md:gap-space-sm text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">restaurant_menu</span><span class="text-label-sm md:text-label-md">Carta</span></a><a class="flex flex-col md:flex-row items-center gap-1 md:gap-space-sm text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">outdoor_grill</span><span class="text-label-sm md:text-label-md">Arroces</span></a><a class="flex flex-col md:flex-row items-center gap-1 md:gap-space-sm text-primary font-semibold" href="#"><span class="material-symbols-outlined text-[24px]">local_phone</span><span class="text-label-sm md:text-label-md">Llamar Ahora</span></a><a class="flex flex-col md:flex-row items-center gap-1 md:gap-space-sm text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[24px]">shopping_bag</span><span class="text-label-sm md:text-label-md">Encargos</span></a></div><footer class="w-full bg-surface-container-low py-space-xl mb-16 md:mb-0"><div class="max-w-7xl mx-auto px-gutter lg:px-space-xl text-center text-on-surface-variant text-body-sm">© 2024 El Mariscal. Todos los derechos reservados.</div></footer></body></html>
